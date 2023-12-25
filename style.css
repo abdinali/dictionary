@@ -1,0 +1,138 @@
+* {
+    font-family: 'Anonymous Pro', monospace;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #333;
+    color: #fff;
+    background-image: url("data:image/svg+xml,%3Csvg width='70' height='70' viewBox='0 0 70 70' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23000000' fill-opacity='0.14' fill-rule='evenodd'%3E%3Cpath d='M0 0h35v35H0V0zm5 5h25v25H5V5zm5 5h15v15H10V10zm5 5h5v5h-5v-5zM40 5h25v25H40V5zm5 5h15v15H45V10zm5 5h5v5h-5v-5zM70 35H35v35h35V35zm-5 5H40v25h25V40zm-5 5H45v15h15V45zm-5 5h-5v5h5v-5zM30 40H5v25h25V40zm-5 5H10v15h15V45zm-5 5h-5v5h5v-5z'/%3E%3C/g%3E%3C/svg%3E");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.dict-container {
+    width: 350px;
+    margin: 10px;
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.2rem;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dict-container .search-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search-container input {
+    border: none;
+    outline: none;
+    width: 80%;
+    border-bottom: 1px solid #333;
+    font-size: 1.1rem;
+}
+
+.search-container .search-btn {
+    padding: 0.2rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* OUTPUT */
+.output-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #222;
+}
+
+.output-container .display {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+
+}
+
+.display .volume {
+    border: none;
+    background-color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.output-container .word-details {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    color: #888;
+}
+
+.output-container .description {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+.description #example {
+    border-left: 5px solid #333;
+    color: #444;
+    padding-left: 15px;
+    font-style: italic;
+}
+
+@media screen and (min-width: 500px) {
+    .dict-container {
+        width: 450px;
+        margin: auto 10px;
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+    .search-container input {
+        font-size: 1.3rem;
+    }
+    .search-container .search-btn {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .dict-container {
+        width: 650px;
+        margin: auto 10px;
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+    .search-container input {
+        font-size: 1.5rem;
+    }
+    .search-container .search-btn {
+        font-size: 1.3rem;
+    }
+    .output-container {
+        width: 100%;
+    }
+}
