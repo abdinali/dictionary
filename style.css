@@ -41,6 +41,7 @@ body {
     gap: 10px;
 }
 
+/* INPUT */
 .search-container input {
     border: none;
     outline: none;
